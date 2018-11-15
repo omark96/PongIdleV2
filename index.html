@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pong Idle</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="../p5.min.js"></script>
+  <script src="pongIdle.js"></script>
+  <script src="paddle.js"></script>
+  <script src="ball.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+      <div id="topMenu">
+        <button type="button" class="topButton" id="gameScreenButton">Game Screen</button>
+        <button type="button" class="topButton" id="gameSettingsButton">Game Settings</button>
+        <button type="button" class="topButton">Achievements</button>
+        <button type="button" class="topButton">Options</button>
+        <button type="button" class="topButton">Prestige</button>
+      </div>
+      <div id="gameArea"></div>
+      <div id="gameSettingsScreen">
+        <div class="slideContainer" id="ballSpeedSlideContainer">
+          <span id="ballSpeedSlideText">Current Ball Speed: 4</span>
+          <input type="range" class="slider" id="ballSpeedSlide" name="ballSpeedSlide" min="1" max="4" step="1" value="4"/>
+        </div>
+        <div class="slideContainer" id="paddleLengthSlideContainer">
+            <span id="paddleLengthSlideText">Current Paddle Length: 100</span>
+            <input type="range" class="slider" id="paddleLengthSlide" name="paddleLengthSlide" min="10" max="100" step="1" value="100"/>
+          </div>
+      </div>
+      <div id="buyMenu">
+          <div id="buyMenuTitle">
+            <span>Buy Menu</span>
+          </div>
+          <button type="button" class="buyMenuButton" id="buyBallButton">Buy another ball<br/>Cost: 10</button>
+          <button type="button" class="buyMenuButton" id="buyBallSpeedButton">Increase maximum ball speed<br/>Cost: 10</button>
+          <button type="button" class="buyMenuButton" id="buyPaddleLengthButton">Increase maximum paddle width<br/>Cost: 10</button>
+          <button type="button" class="buyMenuButton">Buy item<br/>Cost: XXXXXX</button>
+          <button type="button" class="buyMenuButton">Buy item<br/>Cost: XXXXXX</button>
+          <button type="button" class="buyMenuButton">Buy item<br/>Cost: XXXXXX</button>
+          <button type="button" class="buyMenuButton">Buy item<br/>Cost: XXXXXX</button>
+          <button type="button" class="buyMenuButton">Buy item<br/>Cost: XXXXXX</button>
+          <button type="button" class="buyMenuButton">Buy item<br/>Cost: XXXXXX</button>
+          <button type="button" class="buyMenuButton">Buy item<br/>Cost: XXXXXX</button>
+          <button type="button" class="buyMenuButton">Buy item<br/>Cost: XXXXXX</button>
+          <button type="button" class="buyMenuButton">Buy item<br/>Cost: XXXXXX</button>
+          <button type="button" class="buyMenuButton">Buy item<br/>Cost: XXXXXX</button>
+      </div>
+    </div>
+</body>
+
+</html>

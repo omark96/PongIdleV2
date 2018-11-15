@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#wrapper {
+    
+    background-color: black;
+    width: 1100px;
+    height: 700px;
+}
+
+#topMenu {
+    display: flex;
+    background-color: #fff;
+    height: 50px;
+}
+
+.topButton {
+    background-color:#0D47A1;
+    width: 220px;
+    height: 100%;
+    border: none;
+    border-right: 1px solid black;
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.topButton:hover {
+    background-color: #1565c0 !important;
+}
+
+#gameArea {
+    float: left;
+    width: 800px;
+    height: 650px;
+}
+
+#buyMenu {
+    float: right;
+    width: 300px;
+    height: 650px;
+    background: #bbb;
+    overflow-y: scroll;
+}
+
+#buyMenuTitle {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 25px;
+    background-color: #64B5F6;
+    }
+
+.buyMenuButton {
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-top: 1px solid black;
+}
+
+.buyMenuButton:nth-child(odd) {
+    background-color: #E3F2FD;
+}
+
+.buyMenuButton:nth-child(even) {
+    background-color: #BBDEFB;
+}
+
+#gameSettingsScreen {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+.slideContainer {
+    width: 50%;
+    color: white;
+    text-align: center;
+    font-size: 30px
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    margin: 0;
+    width: 100%; /* Full-width */
+    height: 100%; /* Specified height */
+    background: #ffffff; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.9; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+#ballSpeedSlideContainer {
+    position: absolute;
+    left: 25%;
+    top: 50px;
+}
+
+#paddleLengthSlideContainer {
+    position: absolute;
+    left: 25%;
+    top: 200px;
+}
